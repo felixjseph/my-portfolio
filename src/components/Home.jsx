@@ -8,10 +8,25 @@ export default function Home() {
                 <p className='text-xl'>Hi, I'm</p>
                 <h1 className='text-3xl md:text-6xl font-extrabold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent mb-4'>Felix Joseph U. Castaneda</h1>
                 <p className='text-lg md:text-xl text-slate-600 mb-6 font-medium'>Aspiring IT Professional | BSIT Student</p>
-                <p className="md:text-lg mb-12 text-slate-600">
-                    Building Modern Web Solutions Through Innovation & Learning.
-                    4th year BSIT student passionate about creating innovative web applications using modern technologies.
+                <p className="text-lg md:text-xl mb-12 text-slate-600">
+                    Passionate about  
+                    <span className="bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent font-semibold ml-1 mr-1">
+                        solving real-world problems
+                    </span>  
+                    and  
+                    <span className="bg-linear-to-r from-red-500 to-orange-400 bg-clip-text text-transparent font-semibold ml-1 mr-1">
+                        creating innovative solutions
+                    </span> 
+                    using modern technologies. Dedicated to continuous learning and delivering
+                    <span className="bg-linear-to-r from-purple-400 to-blue-600 bg-clip-text text-transparent font-semibold ml-1 mr-1">
+                        high-quality solutions
+                    </span>  
+                    and  
+                    <span className="bg-linear-to-r from-orange-500 to-red-400 bg-clip-text text-transparent font-semibold ml-1 mr-1">
+                        meaningful product value.
+                    </span> 
                 </p>
+
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                
@@ -24,8 +39,8 @@ export default function Home() {
                     </a>
 
                      <a
-                        href="/resume.pdf"
-                        download
+                        href=""
+                        //download
                         className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 rounded-md font-medium text-gray-800 transition-all duration-300 group hover:bg-white hover:border-gray-200"
                     >
                         <Download className="w-5 h-5 mr-2 transition-transform duration-400 group-hover:animate-bounce" />
