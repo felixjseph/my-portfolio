@@ -1,5 +1,8 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import StartupSphereImg from '../images/StartupSphere.png';
+import CineCityImg from '../images/Cinecity.png';
+import PachImg from '../images/Pach.png';
 
 export default function Projects() {
   return (
@@ -16,7 +19,7 @@ export default function Projects() {
 
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
-              src="src/images/StartupSphere.png"
+              src={StartupSphereImg}
               alt="StartupSphere"
               className="w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-105"
             />
@@ -51,7 +54,7 @@ export default function Projects() {
         <article className="p-4 flex flex-col md:flex-row-reverse items-center mb-28 rounded overflow-hidden gap-16">
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
-            src="src/images/Cinecity.png"
+            src={CineCityImg}
             alt="CineCity"
             className="w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-105"
           />
@@ -71,7 +74,7 @@ export default function Projects() {
          {/* Pach Drugmart */}
         <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-10">
           <img
-            src="src/images/Pach.png"
+            src={PachImg}
             alt="Pach"
             className="relative md:w-130 rounded-xl object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
           />

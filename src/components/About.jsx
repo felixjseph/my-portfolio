@@ -1,4 +1,5 @@
 import React from 'react';
+import FelixImg from "../images/Felix.jpg";
 
 export default function About() {
   return (
@@ -19,7 +20,7 @@ export default function About() {
         <div className="flex justify-center">
           <div className="relative w-64 h-64 md:w-90 md:h-110 rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="src/images/Felix.jpg"
+              src={FelixImg}
               alt="Your Portrait"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
