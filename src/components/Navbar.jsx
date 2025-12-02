@@ -57,7 +57,7 @@ export default function Navbar() {
         }`}
         >
           <div className="flex flex-col space-y-3 px-6 py-4">
-              {["Home","About","Services","Projects","Skills","Contact"].map(
+              {["Home","About","Projects"].map(
               (item) => (
                 <a
                   key={item}
