@@ -1,5 +1,6 @@
 import React from 'react';
 import {Mail, Download, Github, Linkedin} from "lucide-react";
+import { ChevronDown } from 'lucide-react';
 
 export default function Home() {
     return (
@@ -39,12 +40,12 @@ export default function Home() {
                     </a>
 
                      <a
-                        href=""
-                        //download
+                        href="/resume.pdf"
+                        download
                         className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 rounded-md font-medium text-gray-800 transition-all duration-300 group hover:bg-white hover:border-gray-200"
                     >
                         <Download className="w-5 h-5 mr-2 transition-transform duration-400 group-hover:animate-bounce" />
-                        Download Resume
+                        Download CV
                     </a>
                     </div>
 
@@ -73,7 +74,17 @@ export default function Home() {
                     </a>
                 </div>
 
+                <div className='mt-20 flex justify-center relative top-20'>
+                    <a
+                    href="#about"
+                    className='animate-bounce text-blue-600 hover-scale-110 transition transform'
+                    >
+                        <ChevronDown className='w-6 h-6'/>
+                    </a>
+                </div>
             </div>
+
+            
         </section>
     )
 }

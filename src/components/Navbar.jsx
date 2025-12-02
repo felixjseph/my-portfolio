@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect} from "react";
 import {Menu, X} from "lucide-react";
 
 const NavLink = ({ href, children }) => (
@@ -14,24 +14,32 @@ const NavLink = ({ href, children }) => (
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => setScrolled(window.scrollY > 50);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-      <header className="sticky top-0 bg-gray-50 backdrop-blur z-30 shadow-sm">
+      <header
+      className={`sticky h-full top-0 w-full z-50 transition-all duration-300 
+        ${scrolled ? "bg-white shadow-md" : "top-3 bg-transparent"}
+      `}
+    >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a 
            href="#home" 
             className="text-3xl font-bold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent cursor-pointer"
             > 
-             FJC
+             Felix.
           </a>
 
         <nav className="space-x-8 hidden md:flex">
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
-          <NavLink href="#services">Services</NavLink>
           <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
         </nav>
 
         <div className="md:hidden">

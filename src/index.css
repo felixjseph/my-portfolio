@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 html, body, #root { height: 100%; }
-body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+body { font-family: 'Space Grotesk', sans-serif}
+p { font-family: 'Inter', sans-serif}
 
 html {
   scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
+

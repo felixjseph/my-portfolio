@@ -9,7 +9,7 @@ const ServiceCard = ({ title, children }) => (
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-slate-50">
+    <section id="services" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl font-bold mb-6">Services That Drive Growth</h2>
         <p className="text-slate-700 mb-8">Comprehensive full-stack development services designed to transform your business digitally</p>
