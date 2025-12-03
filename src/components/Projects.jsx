@@ -17,6 +17,7 @@ export default function Projects() {
         
         <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-16">
 
+          {/* StartUpSphere */}
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
               src={StartupSphereImg}
@@ -37,8 +38,8 @@ export default function Projects() {
             </a>
           </div>
 
-          <div className="md:w-1/2 p-6 flex flex-col">
-            <h2 className="font-semibold text-2xl mb-2">StartupSphere</h2>
+          <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
+            <h2 className="font-semibold text-2xl mb-2">StartUpSphere</h2>
             <p className="text-md text-slate-600 flex-1">
               A comprehensive platform for mapping and visualizing startup ecosystems. Features
               interactive network graphs, stakeholder analysis, and real-time collaboration tools
@@ -61,7 +62,7 @@ export default function Projects() {
           </div>
           
 
-          <div className="md:w-1/2 p-6 flex flex-col">
+          <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">CineCity</h3>
             <p className="text-sm text-slate-600 flex-1">
               A comprehensive movie booking platform with seat selection, payment integration, and user
@@ -78,7 +79,7 @@ export default function Projects() {
             alt="Pach"
             className="relative md:w-130 rounded-xl object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
           />
-          <div className="md:w-1/2 p-6 flex flex-col">
+          <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">Pach Drugmart</h3>
               <p className="text-sm text-slate-600 flex-1">
                 Comprehensive pharmacy management system for inventory control, prescription processing,
