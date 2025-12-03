@@ -15,9 +15,9 @@ export default function Projects() {
           <div className="w-24 h-1 bg-purple-900 mx-auto mt-4 mb-10 rounded-full"></div>
         </div>
         
-        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-16">
-
-          {/* StartUpSphere */}
+        {/* StartUpSphere */}
+        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+          
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
               src={StartupSphereImg}
@@ -45,14 +45,20 @@ export default function Projects() {
               interactive network graphs, stakeholder analysis, and real-time collaboration tools
               for tracking startup communities and their connections.
             </p>
-            <div className="text-md text-slate-500 mt-2">React, TailwindCSS, Node.js</div>
+            <div className="text-md text-slate-500 mt-4 flex gap-3 justify-center md:justify-start">
+              <span>React</span>
+              <span>TailwindCSS</span>
+              <span>Node.js</span>
+            </div>
+
           </div>
         </article>
 
 
 
         {/* CineCity */}
-        <article className="p-4 flex flex-col md:flex-row-reverse items-center mb-28 rounded overflow-hidden gap-16">
+        <article className="p-4 flex flex-col md:flex-row-reverse items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
             src={CineCityImg}
@@ -61,32 +67,51 @@ export default function Projects() {
           />
           </div>
           
-
           <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">CineCity</h3>
-            <p className="text-sm text-slate-600 flex-1">
+            <p className="text-md text-slate-600 flex-1">
               A comprehensive movie booking platform with seat selection, payment integration, and user
               management. Built as a capstone project demonstrating full-stack development capabilities.
             </p>
-            <div className="text-sm text-slate-500 mt-2 leading-relaxed">React, Spring Boot, Tailwind CSS, MySQL, Android Studio</div>
+
+            <div className="text-md text-slate-500 mt-4 flex flex-wrap gap-2 gap-y-0 justify-center md:justify-start">
+              <span className="inline-block">React</span>
+              <span className="inline-block">Spring Boot</span>
+              <span className="inline-block">Tailwind CSS</span>
+              <span className="inline-block">MySQL</span>
+              <span className="inline-block">Android Studio</span>
+            </div>
+
+        
           </div>
         </article>
 
          {/* Pach Drugmart */}
-        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-10">
-          <img
+        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+
+          <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
+            <img
             src={PachImg}
             alt="Pach"
-            className="relative md:w-130 rounded-xl object-cover w-full h-full transition-transform duration-500 transform hover:scale-105"
-          />
+            className="w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-105"
+            />
+          </div>
+          
+
           <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">Pach Drugmart</h3>
-              <p className="text-sm text-slate-600 flex-1">
+              <p className="text-md text-slate-600 flex-1">
                 Comprehensive pharmacy management system for inventory control, prescription processing,
                 and sales tracking. Features include medicine stock management, customer records, and
                 automated billing system.
               </p>
-            <div className="text-sm text-slate-500 mt-2 leading-relaxed">React, Spring Boot, TailwindCSS, MySQL</div>
+              
+            <div className="text-md text-slate-500 mt-4 flex flex-wrap gap-2 gap-y-0 justify-center md:justify-start">
+              <span className="inline-block">React</span>
+              <span className="inline-block">Spring Boot</span>
+              <span className="inline-block">Tailwind CSS</span>
+              <span className="inline-block">MySQL</span>
+            </div>
           </div>
         </article>
       </div>
