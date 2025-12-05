@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Code } from 'lucide-react';
 import StartupSphereImg from '../images/StartupSphere.png';
 import CineCityImg from '../images/Cinecity.png';
 import PachImg from '../images/Pach.png';
@@ -16,7 +16,7 @@ export default function Projects() {
         </div>
         
         {/* StartUpSphere */}
-        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+        <article className="p-4 flex flex-col md:flex-row items-center mb-8 md:mb-20 rounded overflow-hidden gap-6 md:gap-16">
           
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
@@ -45,19 +45,20 @@ export default function Projects() {
               interactive network graphs, stakeholder analysis, and real-time collaboration tools
               for tracking startup communities and their connections.
             </p>
-            <div className="text-md text-slate-500 mt-4 flex gap-3 justify-center md:justify-start">
-              <span>React</span>
-              <span>TailwindCSS</span>
-              <span>Node.js</span>
+            <div className="text-md text-slate-500 mt-4 flex flex-wrap gap-2 gap-y-0 justify-center md:justify-start">
+              <span className="inline-block">React</span>
+              <span className="inline-block">Spring Boot</span>
+              <span className="inline-block">Tailwind CSS</span>
+              <span className="inline-block">Mapbox</span>
+              <span className="inline-block">MySQL</span>
             </div>
-
           </div>
         </article>
 
 
 
         {/* CineCity */}
-        <article className="p-4 flex flex-col md:flex-row-reverse items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+        <article className="p-4 flex flex-col md:flex-row-reverse items-center mb-8 md:mb-20 rounded overflow-hidden gap-6 md:gap-16">
 
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
@@ -87,7 +88,7 @@ export default function Projects() {
         </article>
 
          {/* Pach Drugmart */}
-        <article className="p-4 flex flex-col md:flex-row items-center mb-28 rounded overflow-hidden gap-6 md:gap-16">
+        <article className="p-4 flex flex-col md:flex-row items-center mb-18 rounded overflow-hidden gap-6 md:gap-16">
 
           <div className="relative md:w-1/2 overflow-hidden rounded-xl group">
             <img
@@ -97,7 +98,6 @@ export default function Projects() {
             />
           </div>
           
-
           <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">Pach Drugmart</h3>
               <p className="text-md text-slate-600 flex-1">
@@ -114,6 +114,19 @@ export default function Projects() {
             </div>
           </div>
         </article>
+
+        <div className='mb-28 flex flex-col items-center text-center'>
+          <p className='mb-5 text-md text-slate-500'>
+            Your idea. My craft. One amazing build.</p>
+          <a
+            href='#contact'
+            className='group w-48 sm:w-auto inline-flex items-center font-medium px-6 py-3 bg-linear-to-r from-blue-400 to-purple-600 
+            text-white rounded-md border-slate-300 transition-all duration-300 ease-in-out transform hover:shadow-xl hover:-translate-y-2 '
+            >
+              <Code className='w-5 h-5 mr-2 transition-transform duration-300 ease-in-out group-hover:rotate-180'/>
+              Start a Project
+          </a>
+        </div>
       </div>
     </section>
   );

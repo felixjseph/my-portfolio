@@ -11,12 +11,10 @@ export default function About() {
         <h1 className="relative bottom-8 text-6xl bg-linear-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent font-extrabold mb-3">
           About Me
         </h1>
-
-        <div className="relative bottom-9 w-24 h-1 bg-orange-400 mx-auto mt-4 mb-18 rounded-full"></div>
+        <div className="relative bottom-9 w-24 h-1 bg-orange-400 mx-auto mt-4 mb-6 md:mb-18 rounded-full"></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[1fr_1.7fr] gap-16 items-center">
-
         <div className="flex justify-center">
           <div className="relative w-74 h-84 md:w-90 md:h-110 rounded-2xl overflow-hidden shadow-xl">
             <img
@@ -36,7 +34,6 @@ export default function About() {
             continuous growth in modern web development.
           </p>
         </div>
-
       </div>
     </section>
   );
