@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import {Menu, X} from "lucide-react";
+import {Menu, X, Code} from "lucide-react";
 
 const NavLink = ({ href, children }) => (
   <a 
@@ -31,15 +31,18 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a 
            href="#home" 
-            className="text-3xl font-bold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent cursor-pointer"
+            className="group inline-flex items-center text-3xl font-bold bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent cursor-pointer"
             > 
-             Felix.
+            {/*<Code className="w-10 h-8 mr-0.5 text-blue-600 transition-transform ease-in-out duration-300 group-hover:rotate-180"/>*/}
+            Felix.
           </a>
 
         <nav className="space-x-8 hidden md:flex">
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </nav>
 
         <div className="md:hidden">
@@ -57,7 +60,7 @@ export default function Navbar() {
         }`}
         >
           <div className="flex flex-col space-y-3 px-6 py-4">
-              {["Home","About","Projects"].map(
+              {["Home","About","Projects", "Skills", "Contacts"].map(
               (item) => (
                 <a
                   key={item}

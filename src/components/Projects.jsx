@@ -101,7 +101,7 @@ export default function Projects() {
           <div className="md:w-1/2 p-6 flex flex-col text-center md:text-left">
             <h3 className="font-semibold text-2xl mb-2">Pach Drugmart</h3>
               <p className="text-md text-slate-600 flex-1">
-                Comprehensive pharmacy management system for inventory control, prescription processing,
+                A Comprehensive pharmacy management system for inventory control, prescription processing,
                 and sales tracking. Features include medicine stock management, customer records, and
                 automated billing system.
               </p>
@@ -115,7 +115,7 @@ export default function Projects() {
           </div>
         </article>
 
-        <div className='mb-28 flex flex-col items-center text-center'>
+        <div className='mb-18 flex flex-col items-center text-center'>
           <p className='mb-5 text-md text-slate-500'>
             Your idea. My craft. One amazing build.</p>
           <a

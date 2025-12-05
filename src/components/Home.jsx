@@ -1,6 +1,5 @@
 import React from 'react';
-import {Mail, Download, Github, Linkedin} from "lucide-react";
-import { ChevronDown } from 'lucide-react';
+import {Mail, Download, Github, Linkedin, ChevronDown} from "lucide-react";
 
 export default function Home() {
     return (

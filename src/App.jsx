@@ -1,11 +1,10 @@
 import React from "react"
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About'
-import Services from "./components/Services"
 import Projects from "./components/Projects"
-import Education from "./components/Education"
+import Skills from "./components/Skills"
+import Footer from './components/Footer'
 
 export default function App() {
   
@@ -16,6 +15,7 @@ export default function App() {
             <Home />
             <About />
             <Projects />
+            <Skills />
           </main>
     </div>
   );
