@@ -9,7 +9,7 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-linear-to-b from-red-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h1 className="text-6xl bg-linear-to-r from-black to-purple-600 bg-clip-text text-transparent font-extrabold">
+          <h1 className="text-5xl md:text-6xl bg-linear-to-r from-black to-purple-600 bg-clip-text text-transparent font-extrabold">
             Featured Projects
           </h1>
           <div className="w-24 h-1 bg-purple-900 mx-auto mt-4 mb-10 rounded-full"></div>

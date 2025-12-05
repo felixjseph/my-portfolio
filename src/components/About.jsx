@@ -8,7 +8,7 @@ export default function About() {
       className="py-24 bg-linear-to-b from-purple-200 via-orange-100 to-red-50"
     >
       <div className="text-center">
-        <h1 className="relative bottom-8 text-6xl bg-linear-to-r from-red-400 to-yellow-400 bg-clip-text text-transparent font-extrabold mb-3">
+        <h1 className="relative bottom-8 text-5xl md:text-6xl bg-linear-to-r from-red-500 to-yellow-400 bg-clip-text text-transparent font-extrabold mb-3">
           About Me
         </h1>
         <div className="relative bottom-9 w-24 h-1 bg-orange-400 mx-auto mt-4 mb-6 md:mb-18 rounded-full"></div>
@@ -26,9 +26,9 @@ export default function About() {
         </div>
 
         <div className="w-full text-center md:text-left">
-          <h3 className="font-semibold mb-2 text-2xl">Passionate About Technology</h3>
+          <h3 className="font-semibold mb-2 text-xl md:text-2xl">Passionate About Technology</h3>
 
-          <p className="font-inter text-lg text-slate-600 leading-relaxed">
+          <p className="font-inter text-sm md:text-lg text-slate-600 leading-relaxed">
             As a 4th year BSIT student, I combine academic excellence with practical 
             development experience. I focus on functional, user-first applications and 
             continuous growth in modern web development.

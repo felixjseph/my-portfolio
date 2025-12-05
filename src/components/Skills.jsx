@@ -1,15 +1,23 @@
 import React from "react";
+import { Cpu, Globe, Database, Laptop } from "lucide-react";
 
-const ServiceCard = ({ title, children }) => (
-  <div className="p-6 max-w-xs md:max-w-sm w-full mx-auto rounded-lg shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105">
-    <h4 className="font-semibold text-center md:text-left mb-2">{title}</h4>
+const ServiceCard = ({ title, icon: Icon, children }) => (
+  <div className="group p-6 max-w-xs md:max-w-sm w-full mx-auto rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+    {Icon && (
+      <div className="flex justify-left md:justify-start mb-3 text-green-500 ease-in-out duration-300 group-hover:scale-105">
+        <Icon className="w-12 h-12" />
+      </div>
+    )}
+    <h4 className="font-semibold text-lg mb-2">{title}</h4>
     <p className="text-slate-600 text-sm">{children}</p>
   </div>
 );
 
+
+
 const SkillCard = ({ title, skills }) => (
-  <div className="p-4 max-w-xs md:max-w-sm w-full mx-auto rounded-lg shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105">
-    <h4 className="font-semibold mb-3 text-center md:text-left">{title}</h4>
+  <div className="p-4 max-w-xs md:max-w-sm w-full mx-auto rounded-lg shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105 mb-3">
+    <h4 className="font-semibold text-xl mb-6">{title}</h4>
 
     <div className="space-y-3">
       {skills.map((skill, index) => (
@@ -28,31 +36,50 @@ const SkillCard = ({ title, skills }) => (
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 max-w-6xl mx-auto px-4">
-      <div className="text-center">
-        <h1 className="relative bottom-8 text-5xl md:text-6xl bg-linear-to-r from-green-400 to-green-600 bg-clip-text text-transparent font-extrabold mb-3">
-          Technical Skills
-        </h1>
-        <div className="relative bottom-9 w-24 h-1 bg-green-500 mx-auto mb-10 rounded-full"></div>
-      </div>
-      <div className="grid md:grid-cols-3 gap-6 mb-6">
-        <ServiceCard title="Full Stack Web Development">
-          Modern web applications built with cutting-edge technologies and best practices.
-        </ServiceCard>
+    <section id="skills" className="py-12 max-w-6xl mx-auto px-4">
+        <div className="text-center">
+            <h1 className="relative bottom-8 text-6xl md:text-6xl bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent font-extrabold mb-3">
+            Technical Skills
+            </h1>
+            <div className="relative bottom-7 w-24 h-1 bg-blue-400 mx-auto rounded-full"></div>
+                <p className="text-slate-600 text-lg md:text-base mb-18">
+                    A diverse set of technologies and tools I work with to bring ideas to life.
+                </p>
+        </div>
 
-        <ServiceCard title="Frontend & Mobile Development">
-          Interactive and responsive user interfaces with React and mobile-first design.
-        </ServiceCard>
+        {/*<div className="grid md:grid-cols-3 gap-6 mb-6">
+            <ServiceCard
+            title="Full Stack Web Development"
+            icon={Globe}
+            >
+            Modern web applications built with cutting-edge technologies and best practices.
+            </ServiceCard>
 
-        <ServiceCard title="Backend & Database">
-          Scalable server-side solutions, RESTful APIs, and solid database design.
-        </ServiceCard>
-      </div>
+            <ServiceCard
+            title="Frontend & Mobile Development"
+            icon={Laptop}
+            >
+            Interactive and responsive user interfaces with React and mobile-first design.
+            </ServiceCard>
 
-      <div className="grid md:grid-cols-5 gap-4">
+            <ServiceCard
+            title="Backend & Database"
+            icon={Database}
+            >
+            Scalable server-side solutions, RESTful APIs, and solid database design.
+            </ServiceCard>
+        </div>*/}
 
+        {/*<div className="text-center flex justify-center mt-6">
+            <h1 className="text-2xl md:text-2xl bg-linear-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent font-extrabold flex items-center gap-2 mb-2 mt-2">
+                <Cpu className="w-6 h-6 text-purple-400"/>
+            Tech Stack
+            </h1>
+        </div>*/}
+
+        <div className="grid md:grid-cols-5 gap-4">
         <SkillCard
-          title="Front End"
+          title="Frontend"
           skills={[
             {
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -90,7 +117,7 @@ export default function Skills() {
         />
 
         <SkillCard
-          title="Back End"
+          title="Backend"
           skills={[
             {
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
@@ -176,7 +203,7 @@ export default function Skills() {
         />
 
         <SkillCard
-          title="Misc"
+          title="Others"
           skills={[
             {
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg",
@@ -209,6 +236,11 @@ export default function Skills() {
           ]}
         />
       </div>
+            <div className="text-center">
+                 <p className="text-slate-600 text-md md:text-base mt-8 md:mt-6 italic">
+                    Always learning and expanding my skillset...
+                </p>
+            </div>
     </section>
   );
 }
