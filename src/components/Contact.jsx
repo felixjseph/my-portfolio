@@ -113,9 +113,8 @@ export default function Contact() {
           <p className="text-red-500 mt-2">Oops! Something went wrong.</p>
         )}
       </form>
-      <div className="text-center text-slate-500 md:text-base mt-12">
+      <div className="text-center bottom-9 text-slate-500 md:text-base mt-12">
         <p>@ 2025 Felix Joseph U. Castañeda. All rights reserved. </p>
-        <p>Built with ❤️ & lots of espresso.</p>
       </div>
     </section>
   );

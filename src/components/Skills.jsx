@@ -13,8 +13,6 @@ const ServiceCard = ({ title, icon: Icon, children }) => (
   </div>
 );
 
-
-
 const SkillCard = ({ title, skills }) => (
   <div className="p-4 max-w-xs md:max-w-sm w-full mx-auto rounded-lg shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105 mb-3">
     <h4 className="font-semibold text-xl mb-6">{title}</h4>
